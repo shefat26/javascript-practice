@@ -1,3 +1,4 @@
+const print = console.log;
 
 let a = [1,2,3,4]
 
@@ -10,10 +11,12 @@ console.log(newArr);
 
 let obj = {
 
-    name: "sifat"
+    name: "sifat",
+    age:28
 }
 
-console.log(obj.age);
+const name = obj.name;
+console.log(name);
 
 // console.log("sifat")
 
@@ -30,6 +33,8 @@ console.log(obj.age);
 
 // let , Var , Const
 
+// just declare
+  var b
 
 //declare with value assigning
 var b = 1
@@ -42,12 +47,11 @@ var b = ""
 
 
 
-//We can't re-declare Let keyword in javascript
+//We can't re-declare "Let" & "const" keyword in javascript
 // We can re-assigne Let keyword in javavscript
 
-// just declare
-let c 
 
+let c
 
 
 
@@ -59,6 +63,33 @@ c = 23
 
 //re-declare "c", we can't re-declare "c" with Let, var and Const Keyword . 
 // let c = "name"  
+
+
+//Declaring "const"
+const x = 5 
+
+ //x = 6
+
+ console.log(x)
+
+
+  print(x===5)
+print(x=="5")
+
+
+
+
+ print(27%3);
+ print(27/3);
+
+
+ const remainder = 25%3
+
+print(("2"+"2")-2);
+
+
+
+print(isNaN("22A"))
 
 
 
