@@ -59,17 +59,17 @@ const x = 5;
 
 console.log(x);
 
-print(x === 5);
-print(x == "5");
+// print(x === 5);
+// print(x == "5");
 
-print(27 % 3);
-print(27 / 3);
+// print(27 % 3);
+// print(27 / 3);
 
 const remainder = 25 % 3;
 
-print("2" + "2" - 2);
+//print("2" + "2" - 2);
 
-print(isNaN("22A"));
+//print(isNaN("22A"));
 
 //
 
@@ -88,4 +88,48 @@ let r = {
 };
 
 r = 3;
-console.log(r);
+//console.log(r);
+
+
+
+
+
+// Comparision Operator
+
+
+const isEqual = "Hello" === "Hello"
+
+//expected output boolean
+console.log(isEqual);
+
+
+const compare = "Hello" == 5
+
+//expected output boolean
+console.log(compare);
+
+
+const compareTwo = "5" == 5
+
+//expected output boolean
+console.log(compareTwo);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
