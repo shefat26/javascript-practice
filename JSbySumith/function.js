@@ -167,6 +167,25 @@ let browserInfo = (browser = "chrome", ...details) => {
 
 }
 
+browserInfo();
+
+// here browser=>firefox and ...details=>"115.11","mozila", "headless" param
+browserInfo("firefox", "115.11","mozila", "headless");
+
+
+
+
+// Arrow function with body{ }
+
+// find the max value using Math.max()
+
+let maxNum = (a, b, c) =>{
+
+    return Math.max(a,b,c)
+  
+  }
+  
+  console.log(maxNum(10,20,30))
 
 
 
