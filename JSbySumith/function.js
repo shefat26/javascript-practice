@@ -72,6 +72,49 @@ console.log(aName);
 
 
 
+//Example:- 2
+let personData = {
+
+    firstName: "Jame" ,
+    lastName: "Watson",
+    age: 35,
+    Job: "Business Analyst"
+
+}
+
+let getData = personData => `${personData.firstName} ${personData.lastName} is a ${personData.Job}`
+
+//console.log(getFullName(person));
+
+let newData= getData(personData);
+
+console.log(newData);
+
+
+
+
+
+
+// 5. Arrow function with Default value and double parameter
+
+let greet = (User="guest", age=0) => `Hello ${User}! you are ${age} years old`
+
+let newGreet = greet()
+
+console.log(newGreet);
+
+
+// Here Default parameter in greet() will be ignored and , new value will be added
+let newGreet1 = greet("Tom", 30)
+
+console.log(newGreet1);
+
+
+
+
+
+
+
 
 
 
