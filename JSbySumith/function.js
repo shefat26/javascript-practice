@@ -113,6 +113,62 @@ console.log(newGreet1);
 
 
 
+// 6. Arrow function with rest parameters (...)
+
+
+/*
+ 1) Here we are using rest param to include all the sum(1,2,3,4,5)parameters.
+ 2) numbers.reduce() will reduced the numbers to one value
+ 3) num is our initial value, and it will iterate up to 5th
+  accu--> will add the all the num value one by one
+  
+*/
+
+
+// Example:- 1
+let sum = (...numbers) => numbers.reduce((accu, num) => accu +num,   0)
+
+let newSum = sum(1,2,3,4,5);
+console.log(newSum)
+
+
+
+
+// Example:-  2
+let str1 = (...words) => words.find((e) => e==="Banana" )
+
+let newStr1 = str1("Apple", "Orange","Banana","Mango");
+console.log(newStr1)
+
+
+
+
+// Example:-3
+
+
+
+let word1 = (...words)=> words.filter((e)=> e==="subtract")
+
+
+let newWord1 = word1(["add", "subtract", "plus", "minus", "add", "plus"])
+
+console.log(newWord1);
+
+
+
+
+// Example:-3
+// rest parameter() and default value together
+
+let browserInfo = (browser = "chrome", ...details) => {
+
+  console.log(`Browser: ${browser}`);
+  console.log("other details:", details)
+
+}
+
+
+
 
 
 
