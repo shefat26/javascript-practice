@@ -58,6 +58,67 @@ function toCelcious(fahrenheight) {
 
 
 
+// Replite code practice
+
+
+function multiply(a, b) {
+  return a * b;
+}
+console.log(multiply(2, 3));
+
+function isGreater(a, b) {
+  if (a > b) {
+    return true;
+  }
+  return false;
+}
+console.log(isGreater(2, 7));
+console.log(isGreater(9, 6));
+console.log(isGreater(5, 5));
+
+
+
+
+
+
+
+//Ternary Operator
+
+let w = 15;
+let y = 10;
+
+let z = w > y ? "W is Greater" : "Y is Greater";
+console.log(z);
+
+
+
+
+
+
+
+//Destructuring Object
+let v = ["BMW", "ToyoTa", "KIA"];
+
+let person1 = {
+  job1: "IT",
+  age1: 27,
+  names: "John",
+  car: v,
+  business: "Clothing line",
+  house: "Private house",
+};
+
+// renaming destructure variable, business to commars
+//let { business : comars } = person;
+//console.log(comars);
+
+let { house } = person1;
+console.log(house);
+
+let { age1, job1, names } = person1;
+console.log(age);
+console.log(names);
+console.log(job);
 
 
 
@@ -71,4 +132,3 @@ function toCelcious(fahrenheight) {
 
 
 
- 
