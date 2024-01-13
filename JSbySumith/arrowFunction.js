@@ -7,17 +7,17 @@
 // Arrow function with single or one parameter
 // we don't need prenthesis with single parameter arrow function
 
-let squar = num => num*num;
-let newSquar = squar(5);
-console.log(newSquar);
+let squar = (num) => num*num;
+//let newSquar = squar(5);
+console.log(squar(5));
 
 
 
 
 //we can also have parenthesis with single parameter arrow function
 let aSquar = (num) => num*num;
-let newAsquar = squar(3);
-console.log(newAsquar);
+//let newAsquar = squar(3);
+console.log(aSquar(3));
 
 
 
@@ -32,6 +32,13 @@ let str = () => "hellow world"
 
 console.log(str())
 
+//
+let aStr = (param) => param
+// let newStr = str();
+
+console.log(aStr("What is your Name"))
+console.log(aStr(8))
+
 
 
 
@@ -44,7 +51,7 @@ console.log(str())
 
 let add = (a, b) => a + b;
 
-console.log(add(4,5))
+console.log(add(7,5))
 
 
 

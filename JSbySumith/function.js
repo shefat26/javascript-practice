@@ -54,3 +54,21 @@ function toCelcious(fahrenheight) {
  
  const {job, age, name,cars}= person;
  console.log(job);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
