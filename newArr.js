@@ -94,4 +94,73 @@ console.log(removedArr,"\n");
 
 
 
+let myArray1 = ["A", "B", "C", "D", "E","F"];
+
+// join() , it will return new string separated by coma
+
+let newStr = myArray.join()
+console.log(newStr);
+
+
+
+//The split() method is a string method that creates a new array
+// it will split the "newStr" string in to individual string.
+
+let aStr = newStr.split(",")
+console.log(aStr);
+
+
+
+
+
+// The concat() method
+// the concat method joined two different into one Array
+
+let myArrayA = ["1", "2", "3", "4"];
+
+let myArrayB = ["E","F","G","H"];
+
+//let newArray = myArrayA.concat(myArrayB);
+
+
+// We can also use spread operator for concatination.
+let newArray = [...myArrayA, ...myArrayB];
+
+console.log(newArray);
+
+
+
+
+
+// Nested Array/ Multidimentional Array
+
+
+
+
+// Naveen array practice
+
+
+// 1. splice()
+
+
+let animals = ["dog", "cat", "bird", "fish"]
+
+// add "Linon" at index 1 & remove 0 element 
+animals.splice(1,0,"Lion")
+console.log(animals)
+
+
+animals.splice(3,1,"Zebra")
+console.log(animals)
+
+
+animals.splice(5,0,"PIG")
+console.log(animals)
+
+
+animals.splice(3,2,"Dog")
+console.log(animals)
+
+
+
 
