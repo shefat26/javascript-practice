@@ -205,6 +205,58 @@ function mix(a,b){
 console.log(mix(fruit, num1));
 
 
+// indexOf()
+
+let color = ["red", "green", "blue", "yellow", "red", "orange"]
+
+let newColor = color.indexOf("blue");
+
+console.log(newColor);
+
+// THIS index will give us -1  because we don't have the data "naveen" in the array
+let findName = color.indexOf("naveen");
+console.log(findName);
+
+
+
+// Find the second red index num
+
+//let second = color.indexOf("red", 1);
+
+//this line will iterate through the array to find the duplicate data "red"
+/* "color.indexOf("red")+1" this means first find the first "red" index
+ then find the second or third red index 
+  */
+let second = color.indexOf("red", color.indexOf("red")+1);
+console.log(second);
+
+
+
+
+
+
+
+// includes()
+
+/* in this scenario inludes() will check the data is included or not,
+ And it will return "true" or "false"  
+
+*/
+let test = ["admin", "customer", "seller", "vendor"];
+
+let flag = test.includes("seller");
+
+console.log(flag);
+
+//with multiple str data check
+let flag1 = test.includes("seller", "customer");
+console.log(flag1);
+
+
+// check with unknown data 
+let flag2 = test.includes("Name");
+console.log(flag2);
+
 
 
 
