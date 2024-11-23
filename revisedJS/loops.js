@@ -116,7 +116,8 @@ while(h<=8);
 console.log("##########\n")
 
 
-// "break"  uses in loops
+// "break"  statement in loops
+//use while loop
 
 // print num 1 to 50 and when you see multiply of 5 say "hi"
 // so it will say "hi" after each num: 5,10,15,20,25,30,35,40,45, 50
@@ -133,14 +134,29 @@ while(num<=50){
         console.log("hi")
 
         break;        // when we find the multiplies of 5 it will break
-    }                 // it will break at num "5"
+    }                 // so it will break at num "5"
 
     num ++
 }
 
 
 
+// print the browser using "for ... of" loop and "break" statement
 
+
+let browser = ["chrome", "firefox", "edge", "IE"];
+
+for(let e of browser){
+
+    // we are using "if else" condition to launch specific browse
+    if(e == "edge"){
+
+        console.log("launch edge browser ...");
+
+        break;        // "break" will stop the condition once it matches 
+    }
+
+}
 
 
 
