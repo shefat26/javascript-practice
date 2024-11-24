@@ -108,6 +108,80 @@ console.log(num);
 
 
 
+console.log("##############\n")
 
 
 
+
+console.log("\n####### 'String Type' #######\n")
+
+
+
+// string type
+
+
+let str = "name"
+
+let price = 5;
+
+// string with the "  ${}  "
+let aString = `spinach price is ${price} dollar`
+console.log(aString);
+
+let spinach = `spinach is ${2+4} years old `
+console.log(spinach);
+
+
+
+let littleBoy = ' "wait" said Joe, "Don\'t go without me" '
+// we uses \'t to write "Don't" inside the single quotatio string
+console.log(littleBoy);
+
+
+// join "string" using " + " symbole
+
+let firstName = "James";
+let secondName = "Karbitus";
+let commonName = "Maris";
+
+let fullName;
+
+fullName = firstName + " " +secondName + " " + commonName;
+
+console.log(fullName);
+
+
+
+// printing "newName" with interpolation
+let newName;
+
+newName = `${firstName} ${secondName} ${commonName}`
+
+console.log(newName);
+
+
+
+// Assignment Operator
+
+
+// 3. Comparison Operators
+// These operators compare values and return true or false.
+
+// ==: Equal to  ==>  42 == "42" ;
+// ===: Strict equal to (checks both value and type)=> 42 === 42 ;
+// !=: Not equal to   ==> 9000 != 9001
+// !==: Strict not equal to (checks both value and type) => 900 !== 901
+// >: Greater than ==> 10 > 9 ;
+// <: Less than  ==> 5 < 7 ;
+// >=: Greater than or equal to ==>  10 >= 10
+// <=: Less than or equal to ==> 
+
+// &&: Logical AND (true if both conditions are true) => 5 && 6
+// ||: Logical OR (true if at least one condition is true) => 3 || 2
+// !: Logical NOT (reverses the Boolean value)
+
+
+
+
+
+// Ternary Operator  
