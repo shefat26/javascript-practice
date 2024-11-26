@@ -169,13 +169,13 @@ let myGrade = testScore > 89? `Grade "A"`:testScore > 79? `Grade B `
              :testScore > 59? ` Grade  D ` 
              : ` F ` ;
 
- console.log(myGrade);
+console.log(myGrade);
 
 
 
 
 
- // Multiple "Ternary" operator
+// Multiple "Ternary" operator
 
 
  let firstCheck = false;
@@ -184,14 +184,14 @@ let myGrade = testScore > 89? `Grade "A"`:testScore > 79? `Grade B `
  // here we wrote two "Ternary" operator, inside one "Ternary" operator
  access=firstCheck?"Access denied": secondCheck?"Access denied":"Access granted"
 
- console.log(access);
+console.log(access);
 
 
 
 
 
 
- // "Rock", "Paper" and "Scissors" game for "Ternary" operator
+// "Rock", "Paper" and "Scissors" game for "Ternary" operator
 
 
  let playerOne = "rock";
@@ -200,20 +200,94 @@ let myGrade = testScore > 89? `Grade "A"`:testScore > 79? `Grade B `
  // variable =      "condition"     ?      "true"    :      "false"
  let result1 = playerOne===playerTwo?"player matched":"different player"
 
- console.log(result1);
+console.log(result1);
 
 
 
 
 
+//
+
+
+ let myName = "Sifat";
+ let probalityOfRain = 0.2;
+ let temperatureInc = 26;
+
+
+let message = `Hello, ${myName}, with a rain chance of ${probalityOfRain*100}%
+  and a temparature of ${temperatureInc}C we recommend that` + 
+  (probalityOfRain>0.3? " take an umbrella" : " enjoy this rain") + `
+  ${
+    temperatureInc>=26 ? 'and watch out for heatstroake.'
+    :'and bask in this fine weather'
+}`
+
+
+console.log(message);
+
+
+
+// Refactoring the above code
+
+let newName = "James";
+let rainProbality = 0.2;
+let temparature = 26;
+
+
+let likelyToRain = rainProbality > 0.3 ;
+let sunIsDanger = temparature >= 26;
+let rainPercent = rainProbality * 100;
+
+
+let oldMessage = `Hello ${newName}, with a rain chanceof ${rainPercent}%
+ and a temperature of ${temparature}C we recommend that you` + 
+ (likelyToRain ? "take an umbrella" : " enjoy this rainey day") +
+ `${
+    sunIsDanger 
+    ? " and watch out for heatstroke!" 
+    : "and bask in this fine weather."
+
+ }`;
+
+console.log("\n", oldMessage);
 
 
 
 
 
+// Refactoring / reOrganizing the above code again
+
+let newName1 = "James";
+let rainProbality1 = 0.2;
+let temparature1 = 26;
+
+
+let likelyToRain1 = rainProbality1 > 0.3;
+let sunIsDanger1 = temparature1 >= 26
+let rainPercent1 = rainProbality1*100
+
+let rainAdvice = likelyToRain1 ?"take an umbrella" : "enjoy this rainy day";
+let sunAdvice = sunIsDanger1 ? "watchout for heatstroke" : "bask in this weather";
+
+
+let finalMessage= ` Hello, ${newName1}, with a rain chance of ${rainPercent1}% 
+     and a temperature of ${temparature1}C we recommend that you 
+     ${rainAdvice} and ${sunAdvice}. ` ;
+
+
+console.log("\n", finalMessage);
 
 
 
 
+//
+
+let first = 2;
+let second = 1;
+let problem = 99;
+
+let luckyNumber = first > second ? (problem-1)/2 : problem / 3 ;
+
+console.log(luckyNumber);
 
 
