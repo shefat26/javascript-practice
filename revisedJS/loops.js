@@ -161,6 +161,32 @@ for(let e of browser){
 
 
 
+//  
+
+let favoriteNum = 32;
+
+if(favoriteNum >= 10){
+
+    favoriteNum = favoriteNum + 10
+
+}
+
+console.log("\nfavorite Number:-",favoriteNum);
+
+
+
+// using while loop for above code
+
+let newFavoriteNum = 0;
+
+while( newFavoriteNum < 10){
+
+    newFavoriteNum = newFavoriteNum + 1;
+
+}
+
+console.log(newFavoriteNum);
+
 
 
 

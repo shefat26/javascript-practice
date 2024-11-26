@@ -120,6 +120,94 @@ else{
 }
 
 
+
+
+
+
+console.log("\n###### if ... else , #######\n")
+
+
+// School Practice 
+
+
+
+let person = "Sam"
+
+let greetings;
+
+if(person === "James"){
+
+    greetings = " Hello James";
+}
+else if(person=== "Rocky"){
+
+    greetings = "Hello Rocky";
+}
+else if(person === "Walker"){
+
+    greetings = "Hello Walker";
+}
+else{
+
+    greetings = "Whooo are you";
+}
+
+console.log(greetings);
+
+
+
+
+
+// "Ternary" practice
+
+
+let newPerson = ""
+
+let impression;
+
+ switch (newPerson) {
+    case "Joe":
+
+     impression = "welcoming";
+        
+        break;
+ 
+
+    case "Rabit" :
+
+     impression = "Adorable";
+
+        break;
+
+    case "Tigger":
+
+      impression = "Dangerous Animal";
+
+      break;
+
+
+    case "Shark":
+
+      impression = "Ocean King"
+
+      break;
+
+
+    default:
+
+      impression = "Not a living things"
+
+        break;
+ }
+
+ console.log(impression);
+
+
+
+
+
+
+
 console.log("\n###### Ternary Operator #######\n")
 
 
@@ -206,6 +294,7 @@ console.log(result1);
 
 
 
+// School chapter 
 //
 
 
@@ -289,5 +378,8 @@ let problem = 99;
 let luckyNumber = first > second ? (problem-1)/2 : problem / 3 ;
 
 console.log(luckyNumber);
+
+
+
 
 
