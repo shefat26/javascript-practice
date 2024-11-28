@@ -83,21 +83,24 @@ while(p<=5){
 
 // Print "even" numbers using "while loop"
 
-let l=2;
+let j=2;
 
-while(l<=10){
+while(j<=10){
 
-    console.log(l);
+    console.log(j);
 
     //l+=2;
-    l=l+2                  // l+2 ==> increment by 2 number
+    j=j+2                  // l+2 ==> increment by 2 number
 
 }
 
 console.log("##########\n")
 
 
-// "do ... while loop" 
+// "do ... while" loop 
+// "do ... while" condition present at the last, inside the "while(h<=8)"
+// first the "do{ ... }" code block gets executed the the condition
+
 
 let h = 1;
 

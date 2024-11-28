@@ -155,13 +155,43 @@ else{
 console.log(greetings);
 
 
+//
 
+
+let newAge = 18;
+
+let isAdult1=false, canWork1=false, canEnlist1=false, canDrink1=false;
+
+if(newAge>=21){
+
+    canWork1 = true;
+    canEnlist1 = true;
+    isAdult1 = true;
+    canDrink1 = true;
+
+}
+else if( newAge >18){
+
+    console.log("The condition return true")
+    canWork1 = true;
+    canEnlist1 = true;
+    isAdult1 = true;
+
+}
+else if(newAge > 16){
+
+    canWork1 = true;
+
+}
+
+console.log(`Age: ${newAge}\nCan work: ${canWork1}\nCan enlist: ${canEnlist1}
+           \nIs a legal adult: ${isAdult1}\nCan drink: ${canDrink1}`);
 
 
 // "Ternary" practice
 
 
-let newPerson = ""
+let newPerson = "Joe"
 
 let impression;
 
@@ -203,6 +233,27 @@ let impression;
  console.log(impression);
 
 
+
+
+
+
+ const age = 21;
+let isAdult, canWork, canEnlist, canDrink;
+
+switch (true) { 
+    case age >= 21:
+        canDrink = true;
+    case age >= 18:
+        isAdult = true;
+        canEnlist = true;
+    case age >= 16:
+        canWork = true;
+}
+
+console.log(isAdult);
+//console.log(canWork);
+//console.log(canEnlist);
+//console.log(canDrink);
 
 
 
