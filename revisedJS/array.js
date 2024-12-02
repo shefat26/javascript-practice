@@ -152,7 +152,12 @@ console.log(red);
  so we are saying look for "red" color and start count from indx 2,
  since we have "red" color on the 0th indx
 */
-let secondRed = colorArr.indexOf("red", 2);
+
+//let secondRed = colorArr.indexOf("red", 2);
+
+// ( colorArr.indexOf("red")+1)==> means find the secon  "red" color 
+//if it's more than one.
+let secondRed = colorArr.indexOf("red", colorArr.indexOf("red")+1)
 
 console.log(secondRed);
 
@@ -169,6 +174,91 @@ console.log(indxUnknown);
 
 
 
+// Using "includes()" 
+// "includes()" returns true and false
+
+let test = ["admin", "customer", "seller", "vendor"];
+
+let flag = test.includes("seller", "James");
+console.log(flag)
+
+
+
+
+// foEach():
+
+let n = [1,2,3,4,5];
+
+n.forEach((e) => {
+
+   console.log(e*2);
+   
+})
+
+
+
+
+// .every() Method
+// ".every()" will return "true" or "false" based on the condition
+
+
+let someNum = [1, 2, 3, 4, 5];
+
+ let fewNum = someNum.every((e) => e < 10);
+
+ console.log("condition is:-",fewNum);
+
+
+//
+
+
+
+
+
+// ".some()"
+// atleast one element in the array passing the condition in ".some()"
+
+
+let someNumber = [1]
+
+
+
+let letter = [1,2,3,4,5];
+
+ let fg = letter.some((e) => e % 2 === 0);
+
+console.log(fg);
+
+
+//
+
+let alp = [1,2,3,4,5, "A","b","a"];
+
+ let newAlp = letter.some((e) => e*5 === 20);
+
+console.log("mathched alp:-",newAlp);
+
+
+
+
+
+
+//" find()"
+// "find()" will find a value of the first elements in the arr that satisfy the specific condition
+// it will return the arr element
+
+let total = [1,4,3,2,6,5,7,"A","b","a"]
+
+let newTotal = total.find((e)=> e%2 === 0);
+console.log(newTotal);
+
+
+
+//
+let tol = [1,4,3,2,6,5,7,"A","b","a"]
+
+let newTol = tol.find((e)=> e <= "A");
+console.log(newTol);
 
 
 
@@ -176,15 +266,88 @@ console.log(indxUnknown);
 
 
 
+// "indexOf()"
+/* "indexOf()" will find the
+ instances returns the first index at which a given element can be 
+ found in the array, or -1 if it is not present.
+ so it will return the index number of the element found.
+*/
+
+const beast = ['ant','bison', 'camel', 'duck', 'bison'];
+
+const newBeats = beast.indexOf('bison');
+console.log(newBeats);
+
+
+
+//
+
+let mix = [1,2,6,9,"work",'job','shift',9,2];
+
+let newMix = mix.indexOf(9);
+console.log(newMix);
 
 
 
 
 
 
+// "lastIndexOf()"
+/*
+  "lastIndexOf()" will check the last index of the arr element
+*/
+
+let frt = ['apple','banana',1,7,'apple','mango','orange'];
+
+let findFrt = frt.lastIndexOf('apple');
+console.log('fruts indx:-',findFrt);
+
+
+//
 
 
 
+
+// "rever()"
+//"reverse()" an arr
+
+
+const rev = ['apple','banana','mango','orange',9,3];
+
+let revArr = rev.reverse();
+console.log(revArr);
+
+
+
+
+
+// "sort()"
+/*
+ "sort()" will sort out the element with Alphabetical and numeracial 
+ order.
+ => "Numerical" order comes first, then Alphabetical order.
+ => in Alphabetical sort "Capital" letter will come first then small letter
+ => also Alphabetical letter sorts will come after capital letter sorts
+*/
+
+
+
+let finProd = ['mackboo','inspiron','Thinkpad','hp_envy','14_phone',
+                'airpod'];
+
+let thisProd = finProd.sort();
+console.log(thisProd);
+
+
+
+
+//
+
+let porduct = ["phone","Tablet","computer","iPhone", "25inTv"]
+
+let newProduct = porduct.sort();
+
+console.log(newProduct);
 
 
 
