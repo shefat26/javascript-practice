@@ -227,16 +227,16 @@ let letter = [1,2,3,4,5];
 
  let fg = letter.some((e) => e % 2 === 0);
 
-console.log(fg);
+console.log({fg});
 
 
 //
 
-let alp = [1,2,3,4,5, "A","b","a"];
+let alp = [1,2,3,4,5,"A","b","a"];
 
- let newAlp = letter.some((e) => e*5 === 20);
+ let newAlp = alp.some((el) => el === "A");
 
-console.log("mathched alp:-",newAlp);
+console.log({newAlp});
 
 
 
