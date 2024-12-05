@@ -261,15 +261,91 @@ const m = multi(multiply, 3, 6);
 console.log(m)
 
 
+console.log("\n\n")
 
 
 
 
 
+/// ----------------------O----------------------------------
+
+
+
+// Dave gray
 
 
 
 
+function add(a,b){
+
+    if(b === undefined){
+
+        return a + a ;
+
+    }
+    else{
+
+        return a + b;
+    }
+
+}
+
+console.log(add(3,5))
+
+
+
+// find the user name from the email address
+
+function getUser(email){
+
+    // using "slice()" and "indexOf()" to find the user name from email
+    return email.slice(0, email.indexOf('@'));
+
+    //to print the email untill "@" we conditioned untill index "."
+    //return email.slice(0, email.indexOf('.'));
+
+}
+
+console.log(getUser('james0567@gmail.com'));
+console.log(getUser('RobinDash@gmail.com'));
+
+
+
+
+
+// Annoynomus function
+
+let place = function(a){
+
+    if(a === "city" || a === "town" ){
+
+        return "Dense population"
+
+    }
+    else{
+
+        return "good living condition"
+    }
+}
+
+let densityOfPlace = place( 'town');
+
+console.log(densityOfPlace);
+
+
+
+
+// using arro function to upper case the first letter of the name/word
+
+let toProperCase = (name) => {
+
+    return name.charAt(0).toUpperCase()+name.slice(1).toLowerCase();
+
+};
+
+console.log(toProperCase('jAcKWiLL'));
+
+console.log(toProperCase('septembar'));
 
 
 
