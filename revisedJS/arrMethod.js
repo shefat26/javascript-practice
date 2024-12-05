@@ -6,11 +6,17 @@
 // "map()"
 // "map()" will always return a new arr from the existing arr
 
+const multiply = (x) => x * 3 ;
+
+
+
+
+
 
 let num = [1,2,3,4];
 
-let newNum = num.map((e) => e*2);
-console.log(newNum);
+let newNum = num.map((e) => e*2 );
+console.log({newNum});
 
 
 
