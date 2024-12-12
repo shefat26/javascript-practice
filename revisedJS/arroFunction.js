@@ -168,5 +168,60 @@ console.log(maxValue);
 
 
 
+let fun = () => "hello world"
+
+console.log(fun());
+
+//
+ let calc = (a,b) => {
+
+    if(a>b){
+
+        return "a is greater"
+    }
+    else{
+
+        return "a is less or equal to b"
+    }
+}
+console.log(calc(4,4))
+
+
+
+//
+
+
+let anObj = (a,b)=> { return [a,b,1,2,3,"4","5"]}
+
+console.log(anObj(2,3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
