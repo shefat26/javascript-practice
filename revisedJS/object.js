@@ -321,11 +321,12 @@ let brand = {
 };
 
 // destructring obg "key" name
+// after renaming the obj key, we will not have the access of old key
 let {shirt:top, pant: bottom, shoes: snekers } = brand;
 
-console.log(top);
+console.log({top});
 console.log(bottom);
-console.log(brand.bottom);
+console.log(snekers);
 
 
 // let {shirt, pant, shoes } = brand;
@@ -335,6 +336,7 @@ console.log(brand.bottom);
 
 
 // destructring obj 
+// by destructring  we declare variable
 let {shirt, pant, shoes, belt} = brand;
 
 function outfit({shirt}){
@@ -351,13 +353,41 @@ console.log(belt);
 
 //let {shirt:"tshirt", pant:"short", shoes:"flipflop", belt:"TM"} = brand;
 
+// variable value reassigned
+shirt = "t-shirt"
+pant = "shorts"
+shoes = "slippers"
+console.log(shirt)
+
+
+function cloth(a,b){
+
+    if(a === "t-shirt" && b === "shorts"){
+
+        return true
+    }
+    else{
+
+        return false
+    }
+}
+
+console.log(cloth(shirt, pant))
 
 
 
+let x = 23;
 
+x = "45"
 
+x = true
 
+const y = 23; 
 
+//y = "56";
+
+console.log({x});
+console.log({y});
 
 
 

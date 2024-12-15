@@ -15,6 +15,7 @@
 
 // Higher order Function
 
+//method Overloding in a function in JS
 
 
 
@@ -349,6 +350,68 @@ console.log(toProperCase('septembar'));
 
 
 
+////////////////////////////////////////////
+/////////////////////////////////////////////
+////////////////////////////////////////////////
+
+
+
+// method overloading is not supported by JavaScript
+// method overloading is compile time polymorphism
+// it will be decide which function has to call during run time
+// it will only run the letest function out of multiple function
+
+function print(){
+
+    console.log("hello")
+}
+
+//print()
+
+
+function print(name){
+
+    console.log("hello" + name)
+}
+
+// only this function will be called because this function replaced by above 2 function
+function print(name, age){
+
+    console.log("hello," +" " + name + " age is " + age);
+}
+
+print("james", 28)
+
+
+
+
+// run a test cases on remote browser
+// parameter : browserName, browserVersion, remoteExecution
+
+
+function testBrowser(browserName, browserVersion, remoteExecution){
+
+    if(typeof browserVersion==="number" && typeof remoteExecution ==="boolean"){
+
+        console.log(`Browser: ${browserName}, "version:" ${browserVersion}, remoteEecution: ${remoteExecution}`)
+    }
+    else if(typeof browserVersion==="number"){
+
+        console.log(`Browser: ${browserName}, "version:" ${browserVersion}`)
+
+
+    }
+    else{
+
+        console.log(`Browser: ${browserName}`)
+
+    }
+
+}
+
+testBrowser("chrome", 115, true);
+testBrowser("chrome", 115);
+testBrowser("mozila");
 
 
 
@@ -358,6 +421,38 @@ console.log(toProperCase('septembar'));
 
 
 
+function logWhisper(string){
+
+    
+
+    return string.toUpperCase();
+
+}
+
+console.log(logWhisper("hello"))
+
+
+//
+
+function sayHiToHeadphonedRoommate(str){
+
+    if(str === "Hello!"){
+
+        return "I can't hear you";
+    }
+    else if(str === "HELLO!"){
+
+        return "Yes INDEED"
+
+    }
+    else if(str === str){
+
+        return "I would love to!"
+    }
+
+}
+
+console.log(sayHiToHeadphonedRoommate("HELLO!"))
 
 
 
