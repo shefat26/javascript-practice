@@ -241,7 +241,7 @@ myNewPizza.bake2();
 
 class Pizza3 {
 
-    // public field/variable, public has to declare outside the constructor
+    // public field/property/obj, public has to declare outside the constructor
     crust = "original";
 
     // private field, it will not be accessible outside the "Pizza3" class
